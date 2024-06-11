@@ -13,7 +13,7 @@ const NewsLetter = () => {
         <h4 className={`text-light ${subscribe ? 'd-none' : 'd-block'}`}>Subscribe for new updates!</h4>
       </div>
       <div className="card-body d-flex gap-2 justify-content-center">
-        {subscribe != true ? (
+        {subscribe !== true ? (
           <>
             <input
               type="text"

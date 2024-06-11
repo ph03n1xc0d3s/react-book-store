@@ -14,51 +14,51 @@ const Footer = () => {
             style={{ listStyle: "none" }}
           >
             <li>
-              <a className="text-light text-decoration-none" href="">Home</a>
+              <a className="text-light text-decoration-none" href="/">Home</a>
             </li>
             <li>
-              <a className="text-light text-decoration-none" href="">Shop</a>
+              <a className="text-light text-decoration-none" href="/store">Shop</a>
             </li>
             <li>
-              <a className="text-light text-decoration-none" href="">About</a>
+              <a className="text-light text-decoration-none" href="/about">About</a>
             </li>
             <li> 
-              <a className="text-light text-decoration-none" href="">Contact</a>
+              <a className="text-light text-decoration-none" href="/contact">Contact</a>
             </li>
             <li>
-              <a className="text-light text-decoration-none" href="">Create Account</a>
+              <a className="text-light text-decoration-none" href="/create-account">Create Account</a>
             </li>
           </ul>
         </div>
         <div className="links2">
           <ul className="m-2" style={{ listStyle: "none" }}>
             <li>
-              <a className="text-light text-decoration-none" href="">Privacy Policy</a>
+              <a className="text-light text-decoration-none" href="/privacy-policy">Privacy Policy</a>
             </li>
             <li>
-              <a className="text-light text-decoration-none" href="">Terms and Conditions</a>
+              <a className="text-light text-decoration-none" href="/terms-and-conditions">Terms and Conditions</a>
             </li>
             <li>
-              <a className="text-light text-decoration-none" href="">Help and Support</a>
+              <a className="text-light text-decoration-none" href="/help-and-support">Help and Support</a>
             </li>
             <li>
-              <a className="text-light text-decoration-none" href="">Contact Us</a>
+              <a className="text-light text-decoration-none" href="/contact">Contact Us</a>
             </li>
             <li>
-              <a className="text-light text-decoration-none" href="">Locate offline store</a>
+              <a className="text-light text-decoration-none" href="/offline-stores">Locate offline store</a>
             </li>
           </ul>
         </div>
         <div className="socialmedia">
           <ul className="m-2" style={{ listStyle: "none" }}>
             <li>
-              <a className="text-light text-decoration-none" href="">Instagram</a>
+              <a className="text-light text-decoration-none" href="/instagram">Instagram</a>
             </li>
             <li>
-              <a className="text-light text-decoration-none" href="">Facebook</a>
+              <a className="text-light text-decoration-none" href="/facebook">Facebook</a>
             </li>
             <li>
-              <a className="text-light text-decoration-none" href="">LinkedIn</a>
+              <a className="text-light text-decoration-none" href="/linkedin">LinkedIn</a>
             </li>
           </ul>
         </div>

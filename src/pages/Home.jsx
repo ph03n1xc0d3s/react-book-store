@@ -20,10 +20,10 @@ const Home = () => {
             inform, and ignite your imagination. Dive into our diverse
             collection and discover your next great read!
           </p>
-          <Button variant="dark">Explore Books</Button>
+          <Button variant="dark" href="/store">Explore Books</Button>
         </div>
         <div className="image-section">
-          <img src={bgImage} alt="Image" width="500" />
+          <img src={bgImage} width="500" alt="section"/>
         </div>
       </div>
       <div className="container section-2">
@@ -38,7 +38,7 @@ const Home = () => {
           <div className="image-section">
             <img
               src="https://images.unsplash.com/photo-1473172707857-f9e276582ab6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Image"
+              alt="section"
               width={580}
               className="rounded-1"
             />
