@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.landing_page_title{
+    font-size: 70px !important;
+}
+
+.section-heading-3{
+    font-size: 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
