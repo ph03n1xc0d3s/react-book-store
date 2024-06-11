@@ -1,3 +1,6 @@
+
+![Screenshot (1)](https://github.com/ph03n1xc0d3s/react-book-store/assets/87862253/146c4905-8e7d-4d4a-9ed7-f7f8d39deb1b)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
