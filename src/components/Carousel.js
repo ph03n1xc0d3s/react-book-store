@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Books from "./Books";
+import axios from "axios";
 
 const CarouselComponent = () => {
+  const [book, setBooks] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("http://127.0.0.1:3000/api/books");
+        setBooks(response.data);
+      } catch (error) {
+        console.log(error, "Something went wrong");
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  console.log(book);
+
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -22,40 +40,7 @@ const CarouselComponent = () => {
       items: 1,
     },
   };
-  const books = [
-    {
-      name: "The Bourne Identity",
-      author: "By Gillian Flynn",
-      category: "Action",
-      rating: 2,
-      inStock: true,
-      img: "./images/action-book.jpg",
-    },
-    {
-      name: "Frankenstein",
-      author: "By Gillian Flynn",
-      category: "Horror",
-      rating: 3.2,
-      inStock: true,
-      img: "./images/horror-book.jpg",
-    },
-    {
-      name: "Foundation",
-      author: "By Gillian Flynn",
-      category: "Sci-Fi",
-      rating: 4.5,
-      inStock: true,
-      img: "./images/scifi-book.jpg",
-    },
-    {
-      name: "Gone Girl",
-      author: "By Gillian Flynn",
-      category: "Thriller",
-      rating: 5,
-      inStock: true,
-      img: "./images/action-book.jpg",
-    },
-  ];
+
   return (
     <Carousel
       swipeable={true}
@@ -74,7 +59,7 @@ const CarouselComponent = () => {
       dotListClass="custom-dot-list-style"
       itemClass="carousel-item-padding-40-px"
     >
-      {books.map((e, index) => (
+      {book.map((e, index) => (
         <Books
           key={index}
           name={e.name}
