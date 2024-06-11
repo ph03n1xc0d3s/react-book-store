@@ -3,7 +3,11 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="bg-dark d-flex flex-row justify-content-around align-items-start" style={{height: '200px'}}>
+      <div className="bg-dark d-flex flex-row justify-content-around align-items-center" style={{height: "200px"}}>
+      <div className="navbar-brand">
+      <h2 className="text-light">100 Books Store</h2>
+      <p className="text-light text-center">A brand at your service</p>
+      </div>
         <div className="links-1">
           <ul
             className="m-2"
@@ -37,6 +41,12 @@ const Footer = () => {
             <li>
               <a className="text-light text-decoration-none" href="">Help and Support</a>
             </li>
+            <li>
+              <a className="text-light text-decoration-none" href="">Contact Us</a>
+            </li>
+            <li>
+              <a className="text-light text-decoration-none" href="">Locate offline store</a>
+            </li>
           </ul>
         </div>
         <div className="socialmedia">
@@ -53,8 +63,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="copyright-footer bg-dark-subtle text-center">
-        <p className='m-0'>Designed by Vaibhav</p>
+      <div className="copyright-footer bg-light text-center">
+        <p className='m-0'>&#169; Designed and Developed by PH03N1XC0D3S</p>
       </div>
     </>
   );
