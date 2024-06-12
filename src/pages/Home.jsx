@@ -20,16 +20,20 @@ const Home = () => {
             inform, and ignite your imagination. Dive into our diverse
             collection and discover your next great read!
           </p>
-          <Button variant="dark" href="/store">Explore Books</Button>
+          <Button variant="dark" href="/store">
+            Explore Books
+          </Button>
         </div>
         <div className="image-section">
-          <img src={bgImage} width="500" alt="section"/>
+          <img src={bgImage} width="500" alt="section" />
         </div>
       </div>
       <div className="container section-2">
         <div className="section-container m-3">
           <h3 className="text-center pt-3">Our Collections</h3>
-          <p className="text-center">Discover Your Next Adventure: A World of Books Awaits</p>
+          <p className="text-center">
+            Discover Your Next Adventure: A World of Books Awaits
+          </p>
           <CarouselComponent />
         </div>
       </div>
@@ -43,24 +47,27 @@ const Home = () => {
               className="rounded-1"
             />
           </div>
-          <p>
+          <div>
             <h4 className="section-heading-3">Our Journey</h4>
-            Founded 2024, 100 Books Store was born out of a deep love for books
-            and a desire to create a space where readers could immerse
-            themselves in the wonders of literature. What started as a humble
-            bookstore has since blossomed into a thriving community hub, where
-            bookworms gather to browse, connect, and celebrate the written word.
-            <br />
-            <br />
-            At 100 Books Store, our mission is simple: to inspire, educate, and
-            empower through the power of books. Whether you're searching for the
-            latest bestseller, exploring niche genres, or seeking timeless
-            classics, we're here to help you find the perfect read for every
-            occasion. With an extensive collection curated by our team of
-            passionate bibliophiles, we strive to ignite curiosity, spark
-            imagination, and foster a lifelong love of reading in readers of all
-            backgrounds.
-          </p>
+            <p>
+              Founded 2024, 100 Books Store was born out of a deep love for
+              books and a desire to create a space where readers could immerse
+              themselves in the wonders of literature. What started as a humble
+              bookstore has since blossomed into a thriving community hub, where
+              bookworms gather to browse, connect, and celebrate the written
+              word.
+              <br />
+              <br />
+              At 100 Books Store, our mission is simple: to inspire, educate,
+              and empower through the power of books. Whether you're searching
+              for the latest bestseller, exploring niche genres, or seeking
+              timeless classics, we're here to help you find the perfect read
+              for every occasion. With an extensive collection curated by our
+              team of passionate bibliophiles, we strive to ignite curiosity,
+              spark imagination, and foster a lifelong love of reading in
+              readers of all backgrounds.
+            </p>
+          </div>
         </div>
       </div>
       <div className="container p-2">

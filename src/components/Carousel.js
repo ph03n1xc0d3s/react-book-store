@@ -20,8 +20,6 @@ const CarouselComponent = () => {
     fetchData();
   }, []);
 
-  console.log(book);
-
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -59,9 +57,9 @@ const CarouselComponent = () => {
       dotListClass="custom-dot-list-style"
       itemClass="carousel-item-padding-40-px"
     >
-      {book.map((e, index) => (
+      {book.map((e) => (
         <Books
-          key={index}
+          key={e._id}
           name={e.name}
           rating={e.rating}
           img={e.img}
