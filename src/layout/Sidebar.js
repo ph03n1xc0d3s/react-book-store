@@ -18,23 +18,28 @@ const Sidebar = () => {
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
-          <a href="#" className="nav-link active" aria-current="page">
+          <a
+            href="/admin/dashboard"
+            className={`nav-link ${
+              window.location.href.includes("dashboard")
+                ? "active"
+                : "link-dark"
+            }`}
+            aria-current="page"
+          >
             <svg className="bi me-2" width="16" height="16">
               {/* <use xlink:href="#home"></use> */}
-            </svg>
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link link-dark">
-            <svg className="bi me-2" width="16" height="16">
-              {/* <use xlink:href="#speedometer2"></use> */}
             </svg>
             Dashboard
           </a>
         </li>
         <li>
-          <a href="#" className="nav-link link-dark">
+          <a
+            href="/admin/orders"
+            className={`nav-link ${
+              window.location.href.includes("orders") ? "active" : "link-dark"
+            }`}
+          >
             <svg className="bi me-2" width="16" height="16">
               {/* <use xlink:href="#table"></use> */}
             </svg>
@@ -42,7 +47,12 @@ const Sidebar = () => {
           </a>
         </li>
         <li>
-          <a href="#" className="nav-link link-dark">
+          <a
+            href="/admin/products"
+            className={`nav-link ${
+              window.location.href.includes("products") ? "active" : "link-dark"
+            }`}
+          >
             <svg className="bi me-2" width="16" height="16">
               {/* <use xlink:href="#grid"></use> */}
             </svg>
@@ -50,7 +60,14 @@ const Sidebar = () => {
           </a>
         </li>
         <li>
-          <a href="#" className="nav-link link-dark">
+          <a
+            href="#"
+            className={`nav-link ${
+              window.location.href.includes("customers")
+                ? "active"
+                : "link-dark"
+            }`}
+          >
             <svg className="bi me-2" width="16" height="16">
               {/* <use xlink:href="#people-circle"></use> */}
             </svg>
